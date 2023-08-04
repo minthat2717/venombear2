@@ -131,8 +131,8 @@ h1 {
 
 @media screen and (max-width: 767px) {
   .description {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   /* .home {
     background-image: url(../pngtree-leaves-spring-green-decorative-border-png-image_4364434.png);
@@ -179,7 +179,6 @@ h1 {
     background-image: url(../priscilla-du-preez-6gWMviz-vSo-unsplash.jpg);
     background-size: cover;
     height: auto;
-    padding: 100px;
   }
   .roadmap {
     background-image: url(../priscilla-du-preez-6gWMviz-vSo-unsplash.jpg);
