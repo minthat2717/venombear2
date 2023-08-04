@@ -1,0 +1,189 @@
+body {
+  width: 100%;
+  background-color: blue;
+}
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Open+Sans:ital,wght@1,300&family=Roboto+Condensed:ital,wght@1,300&family=Roboto:wght@400;900&family=Ysabeau+Infant:wght@1&display=swap");
+
+.left {
+  border-radius: 20px;
+}
+h1 {
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 200;
+  font-size: 500px;
+  background: -webkit-linear-gradient(
+    81deg,
+    rgba(72, 105, 170, 1) 0%,
+    rgba(39, 197, 155, 1) 0%,
+    rgba(38, 79, 192, 1) 84%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.right {
+  border-radius: 20px;
+}
+.description {
+  padding-left: 300px;
+  padding-right: 300px;
+}
+.home .h1 {
+  font-size: 40px;
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 600;
+}
+
+.home p {
+  font-size: 20px;
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 200;
+  color: rgba(162, 167, 167, 0.854);
+}
+
+.description p {
+  font-size: 20px;
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 200;
+  color: rgba(162, 167, 167, 0.854);
+}
+
+.description .h1 {
+  font-size: 40px;
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 600;
+}
+.description {
+  background-image: url(../leaf2.jpg);
+  background-size: cover;
+  height: 100vh;
+  /* background-filter: opacity(30%); */
+}
+
+.roadmap .h1 {
+  font-size: 40px;
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 600;
+}
+
+.venomlogo {
+  position: absolute;
+  z-index: -1;
+  width: 3rem;
+  left: 80%;
+  top: 160px;
+  height: 6em;
+  opacity: 0.9;
+  display: none;
+}
+
+.venomtree {
+  position: absolute;
+  z-index: 0; /* put .green-box above .dashed-box */
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 80%;
+  opacity: 1;
+}
+
+.venomlogo1 {
+  position: absolute;
+  z-index: -1;
+  width: 40%;
+  left: 20%;
+  top: 340px;
+  height: 9em;
+  opacity: 0.9;
+}
+
+.venomlogo2 {
+  position: absolute;
+  z-index: -1;
+  width: 4%;
+  left: 23%;
+  top: 100px;
+  height: 3em;
+  opacity: 0.9;
+}
+
+/* teamcss */
+.team .team-card {
+  background: rgb(46, 46, 46);
+  color: rgb(255, 255, 255);
+  border-radius: 15px;
+}
+.roadmap {
+  background-image: url(../leaf2.jpg);
+  background-size: cover;
+  height: 100vh;
+  /* background-filter: opacity(30%); */
+}
+.team h3 {
+  font-weight: 800;
+  color: rgb(255, 255, 255);
+}
+
+.team .h1 {
+  font-size: 40px;
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 767px) {
+  .description {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  /* .home {
+    background-image: url(../pngtree-leaves-spring-green-decorative-border-png-image_4364434.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  } */
+  .venomtree {
+    position: absolute;
+    z-index: 1; /* put .green-box above .dashed-box */
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 45%;
+    display: ;
+  }
+  .venomlogo {
+    position: absolute;
+    z-index: -1;
+    width: 15%;
+    left: 74%;
+    top: 480px;
+    height: 5em;
+    opacity: 1;
+  }
+  .team .team-card {
+    background: rgb(46, 46, 46);
+    color: antiquewhite;
+    width: 80%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .team .team-card {
+    background: rgb(46, 46, 46);
+    color: antiquewhite;
+    width: 80%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .description {
+    background-image: url(../priscilla-du-preez-6gWMviz-vSo-unsplash.jpg);
+    background-size: cover;
+    height: auto;
+    padding: 100px;
+  }
+  .roadmap {
+    background-image: url(../priscilla-du-preez-6gWMviz-vSo-unsplash.jpg);
+    background-size: cover;
+    height: auto;
+  }
+}

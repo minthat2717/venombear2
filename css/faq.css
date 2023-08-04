@@ -1,0 +1,114 @@
+.so {
+  position: relative;
+  width: 100%;
+}
+.faq .container-faq {
+  background: rgb(26, 24, 24);
+  border-radius: 20px;
+  margin: auto;
+}
+.so .faq-c {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  height: 50px;
+  font-weight: 100;
+  display: flex;
+  flex: 1;
+  text-align: start;
+  justify-content: center;
+  align-items: center;
+  /* box-shadow: 4px 4px 20px -2px rgba(0, 0, 0, 0.35); */
+  transition: all 0.4s;
+}
+
+#toggle {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  opacity: 0;
+  cursor: pointer;
+  height: 40px;
+}
+
+.faq-c::before {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: inherit;
+  aspect-ratio: 1;
+  background: currentColor;
+  display: flex;
+  align-items: center;
+  padding-right: 0rem;
+  content: "";
+  clip-path: polygon(50% 25%, 20% 80%, 80% 80%);
+  transform: rotate(180deg) scale(0.5);
+  opacity: 0.5;
+}
+
+#toggle:not(:checked) ~ .faq-c::before {
+  transform: rotate(0deg) scale(0.55);
+}
+
+#toggle:not(:checked) ~ .container-faq {
+  border-radius: 20px;
+}
+
+#toggle:focus ~ .faq-c {
+  background: rgb(31, 31, 31);
+  transition: background 0.45s;
+}
+
+#toggle:focus ~ .container-faq {
+  border-radius: 20px;
+}
+
+#toggle:checked ~ ul {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+}
+
+#toggle:not(:checked) ~ ul {
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.so ul {
+  /* border-radius: 10px; */
+  color: black;
+  padding-left: 0;
+  padding-top: 1rem;
+  background: #656463;
+  text-align: right;
+  text-align: center;
+  transition: all 0.4s ease-out;
+  width: 100%;
+  margin-bottom: 0;
+}
+.so ul li {
+  /* border-radius: 1px; */
+  position: relative;
+  display: inline-block;
+  line-height: 1.5;
+  width: 100%;
+  /* margin: 0 0 0.25rem 0; */
+  transition: background 3s;
+}
+
+.so ul a {
+  display: block;
+  color: inherit;
+  text-transform: lowercase;
+  font-weight: 200;
+  text-decoration: none;
+}
+
+.container-faq {
+  /* margin: auto; */
+  width: 95%;
+  margin-top: 20px;
+  color: #b7c0c6;
+}

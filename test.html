@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* default css start */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: aqua;
+      }
+      .containera {
+        width: 100%;
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 0 15px;
+      }
+
+      /* navbar regular css start */
+      .navbar-area {
+        background: rgba(0, 0, 0, 0.986);
+        /* border-bottom: 1px solid #000; */
+        position: sticky;
+        /* backdrop-filter: blur(9px); */
+        top: 0;
+      }
+      .site-navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .site-navbar img {
+        border-radius: 50%;
+        border: 1px solid rgba(255, 254, 254, 0.24);
+      }
+      .site-navbar ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+      }
+      .site-navbar ul li a {
+        color: #fff;
+        padding: 20px;
+        display: block;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+      .site-navbar ul li a:hover {
+        background: rgba(255, 255, 255, 0.1);
+      }
+      /* navbar regular css end */
+
+      /* nav-toggler css start */
+      .nav-toggler {
+        border: 3px solid #fff;
+        padding: 5px;
+        background-color: transparent;
+        cursor: pointer;
+        height: 39px;
+        display: none;
+      }
+      .nav-toggler span,
+      .nav-toggler span:before,
+      .nav-toggler span:after {
+        width: 28px;
+        height: 3px;
+        background-color: #fff;
+        display: block;
+        transition: 0.3s;
+      }
+      .nav-toggler span:before {
+        content: "";
+        transform: translateY(-9px);
+      }
+      .nav-toggler span:after {
+        content: "";
+        transform: translateY(6px);
+      }
+      .nav-toggler.toggler-open span {
+        background-color: transparent;
+      }
+      .nav-toggler.toggler-open span:before {
+        transform: translateY(0px) rotate(45deg);
+      }
+
+      .intro-area {
+        height: calc(100vh - 61px);
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #fff;
+      }
+      .intro-area h2 {
+        font-size: 50px;
+        font-weight: 300;
+        line-height: 50px;
+        margin-bottom: 25px;
+      }
+      .intro-area p {
+        font-size: 18px;
+      }
+
+      @media screen and (max-width: 767px) {
+        /* .container {
+          max-width: 100%;
+        } */
+        /* navbar css for mobile start */
+        .nav-toggler {
+          display: block;
+        }
+        .site-navbar {
+          min-height: 60px;
+        }
+
+        .site-navbar ul {
+          top: 60px;
+          display: block;
+          position: fixed;
+          width: 100%;
+          height: calc(100vh - 80px);
+          background: rgb(52, 63, 52);
+
+          left: -100%;
+          text-align: center;
+          transition: all 0.5s;
+        }
+        .site-navbar ul li {
+          width: 100%;
+          text-align: center;
+        }
+        .site-navbar ul li a {
+          padding: 25px;
+        }
+        .site-navbar ul li a:hover {
+          background-color: rgb(255, 255, 255);
+        }
+        .site-navbar ul.open {
+          max-height: 100vh;
+          left: 0;
+        }
+        .intro-area h2 {
+          font-size: 36px;
+          margin-bottom: 15px;
+        }
+        /* navbar css for mobile end */
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- site-navbar start -->
+    <div class="navbar-area bg-black">
+      <div class="containera">
+        <nav class="site-navbar sticky-top">
+          <!-- site logo -->
+          <a href="#home" class="site-logo"
+            ><img
+              style=""
+              src="./bPHGodcV_400x400.jpg"
+              alt="venommonkey"
+              width="60px"
+              height="60px"
+          /></a>
+
+          <!-- site menu/nav -->
+          <ul>
+            <li><a href="#home">home</a></li>
+            <li><a href="#description">Description</a></li>
+            <li><a href="#roadmap">Roadmap</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#faq">Faq</a></li>
+            <li>
+              <a href=""><i class="fa-brands fa-discord"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+            </li>
+          </ul>
+
+          <!-- nav-toggler for mobile version only -->
+          <button class="nav-toggler">
+            <span></span>
+          </button>
+        </nav>
+      </div>
+    </div>
+    <!-- navbar-area end -->
+    <hr />
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
+      assumenda exercitationem cum fugit! Tempore nostrum amet nulla velit?
+      Placeat quod autem fuga atque quasi debitis harum optio perferendis
+      quisquam explicabo ducimus neque molestias cumque, corporis incidunt
+      beatae dignissimos esse voluptatibus excepturi eligendi! Sint commodi
+      officia omnis atque? Atque amet corrupti fuga saepe quae. Eveniet odit a,
+      voluptate eaque facere fugiat, ex, suscipit perspiciatis amet aspernatur
+      nulla architecto minus doloribus inventore culpa rerum odio autem ullam
+      fuga molestias? Ullam eveniet deserunt dicta iure nulla hic repudiandae
+      assumenda! Quos consequuntur repellat veniam iste. Omnis dolorem ratione
+      dignissimos vitae quis eius officia recusandae.
+    </p>
+    <hr />
+
+    <div class="card">card</div>
+  </body>
+  <script>
+    // define all UI variable
+    const navToggler = document.querySelector(".nav-toggler");
+    const navMenu = document.querySelector(".site-navbar ul");
+    const navLinks = document.querySelectorAll(".site-navbar a");
+    // load all event listners
+    allEventListners();
+
+    // functions of all event listners
+    function allEventListners() {
+      // toggler icon click event
+      navToggler.addEventListener("click", togglerClick);
+      // nav links click event
+      navLinks.forEach((elem) => elem.addEventListener("click", navLinkClick));
+    }
+
+    // togglerClick function
+    function togglerClick() {
+      //   navToggler.classList.toggle("toggler-open");
+      navMenu.classList.toggle("open");
+    }
+
+    // navLinkClick function
+    function navLinkClick() {
+      if (navMenu.classList.contains("open")) {
+        navToggler.click();
+      }
+    }
+  </script>
+</html>
