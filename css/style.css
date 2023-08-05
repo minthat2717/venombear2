@@ -1,6 +1,7 @@
 body {
   width: 100%;
   background-color: blue;
+  overflow-x: hidden;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap");
@@ -168,6 +169,11 @@ h1 {
 }
 
 @media screen and (max-width: 830px) {
+  body {
+    width: 100%;
+    background-color: blue;
+    overflow-x: hidden;
+  }
   .team .team-card {
     background: rgb(46, 46, 46);
     color: antiquewhite;
