@@ -15,10 +15,10 @@ body {
 }
 
 .navbar-are {
-  background: rgba(58, 24, 24, 0.16);
+  background: rgb(0, 0, 0);
   /* border-bottom: 1px solid #cfcece; */
   position: sticky;
-  backdrop-filter: blur(9px);
+  /* backdrop-filter: blur(9px); */
   top: 0;
 }
 .site-navbar {
@@ -116,7 +116,7 @@ body {
     position: fixed;
     width: 100%;
     height: calc(100vh - 61px);
-    background: rgb(48, 70, 48);
+    background: rgb(0, 0, 0);
     left: -100%;
     text-align: center;
     transition: all 0.5s;
