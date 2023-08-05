@@ -111,6 +111,7 @@ h1 {
   background: rgb(46, 46, 46);
   color: rgb(255, 255, 255);
   border-radius: 15px;
+  border-left: 5px solid rgb(81, 81, 221);
 }
 .roadmap {
   background-image: url(../leaf2.jpg);
@@ -134,11 +135,7 @@ h1 {
     padding-left: 20px;
     padding-right: 20px;
   }
-  /* .home {
-    background-image: url(../pngtree-leaves-spring-green-decorative-border-png-image_4364434.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-  } */
+
   .venomtree {
     position: absolute;
     z-index: 1; /* put .green-box above .dashed-box */
@@ -179,6 +176,9 @@ h1 {
     background-image: url(../priscilla-du-preez-6gWMviz-vSo-unsplash.jpg);
     background-size: cover;
     height: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 50px;
   }
   .roadmap {
     background-image: url(../priscilla-du-preez-6gWMviz-vSo-unsplash.jpg);
