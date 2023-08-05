@@ -2,13 +2,17 @@ body {
   width: 100%;
   background-color: blue;
 }
-@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Open+Sans:ital,wght@1,300&family=Roboto+Condensed:ital,wght@1,300&family=Roboto:wght@400;900&family=Ysabeau+Infant:wght@1&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap");
+
+.font1 {
+  font-family: "Teko", sans-serif;
+}
 .left {
   border-radius: 20px;
 }
 h1 {
-  font-family: "Fjalla One", sans-serif;
+  /* font-family: "Teko", sans-serif; */
   font-weight: 200;
   font-size: 500px;
   background: -webkit-linear-gradient(
@@ -26,6 +30,7 @@ h1 {
 .description {
   padding-left: 300px;
   padding-right: 300px;
+  padding-top: 50px;
 }
 .home .h1 {
   font-size: 40px;
@@ -35,16 +40,16 @@ h1 {
 
 .home p {
   font-size: 20px;
-  font-family: "Fjalla One", sans-serif;
+  font-family: "Teko", sans-serif;
   font-weight: 200;
-  color: rgba(162, 167, 167, 0.854);
+  color: rgba(254, 238, 238, 0.854);
 }
 
 .description p {
   font-size: 20px;
-  font-family: "Fjalla One", sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: 200;
-  color: rgba(162, 167, 167, 0.854);
+  color: rgba(240, 240, 240, 0.854);
 }
 
 .description .h1 {
@@ -56,7 +61,6 @@ h1 {
   background-image: url(../leaf2.jpg);
   background-size: cover;
   height: 100vh;
-  /* background-filter: opacity(30%); */
 }
 
 .roadmap .h1 {
@@ -78,12 +82,13 @@ h1 {
 
 .venomtree {
   position: absolute;
-  z-index: 0; /* put .green-box above .dashed-box */
+  z-index: 0;
   width: 100%;
   left: 0;
   top: 0;
   height: 80%;
   opacity: 1;
+  display: none;
 }
 
 .venomlogo1 {
@@ -117,7 +122,6 @@ h1 {
   background-image: url(../leaf2.jpg);
   background-size: cover;
   height: 100vh;
-  /* background-filter: opacity(30%); */
 }
 .team h3 {
   font-weight: 800;
