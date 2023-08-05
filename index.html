@@ -111,7 +111,10 @@
               >
                 Venom Monkeys coming to get you venomized ! 🍌
               </p>
-              <a type="button" class="btn btn-primary rounded-5 font1"
+              <a
+                type="button"
+                class="btn btn-primary rounded-5 font1"
+                href="https://discord.gg/tCnS29ty"
                 >Join Our Community
                 <i class="fa-solid fa-arrow-right fa-shake"></i
               ></a>
@@ -576,13 +579,22 @@
           duration: 500,
           distance: "50px",
           delay: 800,
+          desktop: true,
+          mobile: false,
         });
-        ScrollReveal().reveal(".card1-4", {
-          origin: "bottom",
-          duration: 500,
-          distance: "50px",
-          delay: 1000,
-        });
+
+        ScrollReveal().reveal(
+          ".card1-4",
+
+          {
+            origin: "bottom",
+            duration: 500,
+            distance: "50px",
+            delay: 1000,
+            desktop: true,
+            mobile: false,
+          }
+        );
         ScrollReveal().reveal(".roadmap-p", {
           origin: "bottom",
           duration: 500,
