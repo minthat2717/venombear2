@@ -1,7 +1,5 @@
 /* default css start */
 * {
-  /* margin: 0;
-  padding: 0; */
   box-sizing: border-box;
 }
 body {
@@ -16,9 +14,7 @@ body {
 
 .navbar-are {
   background: rgb(0, 0, 0);
-
   position: sticky;
-
   top: 0;
 }
 .site-navbar {
@@ -34,6 +30,7 @@ body {
   padding: 0;
   list-style: none;
   display: flex;
+  font-family: myfont;
 }
 .site-navbar ul li a {
   color: #fff;
@@ -49,8 +46,8 @@ body {
 
 /* nav-toggler css start */
 .nav-toggler {
-  border: 3px solid #fff;
-  padding: 5px;
+  /* border: 3px solid #fff; */
+  /* padding: 5px; */
   background-color: transparent;
   cursor: pointer;
   height: 39px;
