@@ -3,19 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./css/faq.css" rel="stylesheet" />
-    <!-- font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Venom Monkey</title>
+    <link
+      rel="shortcut icon"
+      href="./bPHGodcV_400x400.jpg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/nav.css" />
+    <link rel="stylesheet" href="./css/roadmap.css" />
+    <link rel="stylesheet" href="./css/team.css" />
+    <link rel="stylesheet" href="./css/faq.css">
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;700&display=swap"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
     />
     <!--fontawesome links-->
     <link
@@ -25,64 +32,38 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- css -->
-    <link rel="shortcut icon" href="./src/img/vlogo1.png" type="image/x-icon" />
-    <link href="./css/faq.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./css/nav.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/roadmap.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
-    />
-
-    <title>Venom Monkey</title>
   </head>
   <body
-    style="
-      background: rgb(0, 15, 0);
-      background: linear-gradient(
-        349deg,
-        rgba(0, 2, 0, 1) 0%,
-        rgba(0, 0, 0, 1) 60%,
-        rgb(0, 16, 4) 90%
-      );
+    style=" 
+      background: rgb(6, 13, 6);width: 100%;
+        
     "
   >
     <!-- site-navbar start -->
-    <div class="navbar-are sticky-top">
-      <div class="containers">
-        <nav class="site-navbar">
+    <div class="navbar-area ">
+      <div class="containera">
+        <nav class="site-navbar sticky-top">
           <!-- site logo -->
           <a href="#home" class="site-logo"
             ><img
+              style=""
               src="./bPHGodcV_400x400.jpg"
-              alt=""
+              alt="venommonkey"
               width="60px"
               height="60px"
           /></a>
 
           <!-- site menu/nav -->
-          <ul class="font">
-            <li><a href="#home">Home</a></li>
+          <ul>
+            <li><a href="#home">home</a></li>
             <li><a href="#description">Description</a></li>
             <li><a href="#roadmap">Roadmap</a></li>
-            <li><a href="#team">team</a></li>
-
-            <li>
-              <a href="https://twitter.com/VenomMonkeys" target="_blank"
-                ><i class="fa-brands fa-twitter"></i
-              ></a>
-            </li>
-            <li>
-              <a href="https://discord.gg/tCnS29ty" target="_blank"
-                ><i class="fa-brands fa-discord"></i
-              ></a>
-            </li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#faq">Faq</a></li>
+            <li><a href=""><i class="fa-brands fa-discord"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
           </ul>
-
+          
           <!-- nav-toggler for mobile version only -->
           <button class="nav-toggler">
             <span></span>
@@ -91,55 +72,34 @@
       </div>
     </div>
     <!-- navbar-area end -->
-
+    
     <!-- home section -->
     <section class="home px-5" id="home">
       <div
         class="row m-auto min-vh-100 align-items-center align-content-center"
         style="height: 100%"
       >
-        <div class="col-lg-6 home-left" style="height: 100%">
+        <div class="col-lg-6" style="height: 100%">
           <div class="row" style="height: 100%">
             <div class="col-lg-12 m-auto">
-              <h1
-                class="text-white h1 animate__animated animate__flipInX animate__delay-2s"
-              >
-                GET VENOMIZED
-              </h1>
-              <p
-                class="font1 animate__zoomIn animate__animated animate__delay-2s"
-              >
+              <h1 class="text-white h1">INTRODUCING</h1>
+              <p class="text-white">
                 Venom Monkeys coming to get you venomized ! 🍌
               </p>
-              <a
-                type="button"
-                class="btn btn-primary rounded-5 font1"
-                href="https://discord.gg/tCnS29ty"
-                >Join Our Community
-                <i class="fa-solid fa-arrow-right fa-shake"></i
-              ></a>
+              <a type="button" class="btn btn-primary rounded-5">Join Our Community <i class="fa-solid fa-arrow-right "></i></a>
             </div>
           </div>
         </div>
 
         <div class="col-lg-6 mt-5" style="height: 100%">
-          <div>
-            <img src="./BANANAimage.png" alt="" class="venomlogo fa-bounce" />
-          </div>
-          <div>
-            <img
-              src="./pngtree-leaves-spring-green-decorative-border-png-image_4364434.png"
-              alt=""
-              class="venomtree"
-            />
-          </div>
+          <div><img src="./22059.png" alt="" class="venomlogo" /></div>
           <div>
             <img src="./header-big.caf69b04.png" alt="" class="venomlogo1" />
           </div>
           <div>
             <img src="./moon.png" alt="" class="venomlogo2" />
           </div>
-          <div class="col-lg-12 m-auto home-right">
+          <div class="col-lg-12 m-auto">
             <img
               src="./2.jpeg"
               alt=""
@@ -158,154 +118,120 @@
         </div>
       </div>
     </section>
-
-    <section class="description" id="description">
-      <div class="text-center text-white mb-5 mt-5 h1 description-h1">
-        <img
-          src="./BANANAimage.png"
-          alt=""
-          class="ve fa-bounce"
-          width="30px"
-          height="40px"
-        />
-        DESCRIPTION
-        <img
-          src="./BANANAimage.png"
-          alt=""
-          class="ve fa-bounce"
-          width="30px"
-          height="40px"
-        />
+    <div class=" text-white" id="description" style="height: 56px; "></div>
+    <section class="description mb-5">
+      <div class="m-auto">
+        <div class="text-center text-white mb-5 h1">DESCRIPTION</div>
+        <p class="text-center">
+          Welcome to Venom Monkeys, a Community-Oriented NFT Project! At Venom
+          Monkeys, we are excited to present our NFT project focused on our
+          crazy Monkeys! Our Monkeys are different since they are on the run
+          from Venom Labs 🧪 , completing their quest in search of BANANAS! 🍌 <br>
+          Join our community and explore the world of Venom Monkeys! Our Unique
+          Monkeys Our Venom Monkeys are special because they have managed to
+          escape from Venom Labs 🧪 , and now they are seeking for their beloved
+          BANANAS 🍌 <br> Each Monkey has a unique appearance and personality, making
+          them as individual as those who collect them. Find Your Monkeys To
+          catch our monkeys, you need to have your BANANA 🍌 to enter the Jungle
+          🌴 Only those with their BANANA can participate and enjoy this fun
+          game of finding your favorite monkey. Who knows, maybe you'll even
+          discover a never-before-seen Monkey! Join our community and have fun
+          finding your chosen MONKEY! Venom Monkeys coming to get you venomized
+          ! 🍌
+        </p>
       </div>
-
-      <p class="text-center description-p">
-        Welcome to Venom Monkeys, a Community-Oriented NFT Project! At Venom
-        Monkeys, we are excited to present our NFT project focused on our crazy
-        Monkeys! Our Monkeys are different since they are on the run from Venom
-        Labs 🧪 , completing their quest in search of BANANAS! 🍌
-        <br />
-        Join our community and explore the world of Venom Monkeys! Our Unique
-        Monkeys Our Venom Monkeys are special because they have managed to
-        escape from Venom Labs 🧪 , and now they are seeking for their beloved
-        BANANAS 🍌 <br />
-        Each Monkey has a unique appearance and personality, making them as
-        individual as those who collect them. Find Your Monkeys To catch our
-        monkeys, you need to have your BANANA 🍌 to enter the Jungle 🌴 Only
-        those with their BANANA can participate and enjoy this fun game of
-        finding your favorite monkey. Who knows, maybe you'll even discover a
-        never-before-seen Monkey! Join our community and have fun finding your
-        chosen MONKEY! Venom Monkeys coming to get you venomized ! 🍌
-      </p>
+      
     </section>
-    <!-- home section end -->
-
-    <!-- description section start -->
-
-    <!-- roadmap start  -->
-    <section class="roadmap">
-      <div class="text-white" id="roadmap" style="height: 56px"></div>
+    <div class=" text-white" id="roadmap" style="height: 50px; "></div>
+    <!-- roadmap -->
+    <section class="roadmap mt-5" >
       <div class="container">
-        <div class="text-white text-center mb-5 h1 mt-5 description-h1">
-          <img
-            src="./BANANAimage.png"
-            alt=""
-            class="ve fa-bounce"
-            width="30px"
-            height="40px"
-          />
-          Roadmap
-          <img
-            src="./BANANAimage.png"
-            alt=""
-            class="ve fa-bounce"
-            width="30px"
-            height="40px"
-          />
-        </div>
-        <p class="text-center text-light roadmap-p">
+        <div class="text-white text-center mb-5 h1">Roadmap</div>
+        <p class="text-center text-light">
           "Please note that this roadmap is a high-level overview and may be
           subject to adjustments and additions based on community feedback and
           evolving industry trends."
         </p>
-        <ul class="cards mt-5 mb-5">
-          <li class="card1 card1-1">
+        <ul class="cards">
+          <li class="card1">
             <div>
               <h3 class="card-title">Phase 1</h3>
               <div class="card-content">
                 <p>Genesis Release</p>
-                <p>
-                  Engage with the community through social media campaigns and
-                  promotional activities.
-                </p>
+                <p>Engage with the community through social media campaigns and
+                  promotional activities. 
+                 
+              </p>
               </div>
             </div>
             <div class="card-link-wrapper">
               <a
-                class="card-link text-uppercase"
-                id="open-popup1"
-                href="javascript://"
-                >Read More</a
-              >
+                      class="card-link text-uppercase"
+                      
+                      id="open-popup1"
+                      href="javascript://"
+                      >Read More</a
+                    >
             </div>
           </li>
-          <li class="card1 card1-2">
+          <li class="card1">
             <div>
               <h3 class="card-title">Phase 2</h3>
               <div class="card-content">
                 <h5>Jungle Exploration</h5>
                 <p>
                   Launch mainnet collection of Venom Monkeys NFTs on Venom
-                  Mainnet.
+                    Mainnet.
                 </p>
               </div>
             </div>
             <div class="card-link-wrapper">
               <a
-                class="card-link text-uppercase"
-                id="open-popup2"
-                href="javascript://"
-                >Read More</a
-              >
+                      class="card-link text-uppercase"
+                     
+                      id="open-popup2"
+                      href="javascript://"
+                      >Read More</a
+                    >
             </div>
           </li>
-          <li class="card1 card1-3">
+          <li class="card1">
             <div>
               <h3 class="card-title">PHASE 3</h3>
               <div class="card-content">
                 <h5>Community Expansion</h5>
                 <p>
-                  Launch a governance token to give our community members a say
-                  in the future development of Venom Monkeys.
+                  Launch a governance token to give our community members a
+                    say in the future development of Venom Monkeys.
                 </p>
               </div>
             </div>
             <div class="card-link-wrapper">
               <a
-                class="card-link text-uppercase"
-                id="open-popup3"
-                href="javascript://"
-                >Read More</a
-              >
+                      class="card-link text-uppercase"
+                      id="open-popup3"
+                      href="javascript://"
+                      >Read More</a
+                    >
             </div>
           </li>
-          <li class="card1 card1-4">
+          <li class="card1">
             <div>
               <h3 class="card-title">phase 4</h3>
               <div class="card-content">
                 <p>
-                  Integrate Venom Monkeys into various platforms and
-                  applications, allowing them to be used as avatars, emojis, or
-                  in virtual worlds.
+                  Integrate Venom Monkeys into various platforms and applications, allowing them to be used as avatars, emojis, or in virtual worlds.
                 </p>
               </div>
             </div>
             <div class="card-link-wrapper">
               <a
-                class="card-link text-uppercase"
-                id="open-popup4"
-                href="javascript://"
-                >Read More</a
-              >
+                      class="card-link text-uppercase"
+                     
+                      id="open-popup4"
+                      href="javascript://"
+                      >Read More</a
+                    >
             </div>
           </li>
           <li class="card1">
@@ -313,295 +239,151 @@
               <h3 class="card-title">Phase 5</h3>
               <div class="card-content">
                 <p>
-                  Expand the Venom Monkeys ecosystem by partnering with other
-                  NFT projects and blockchain platforms.
+                  Expand the Venom Monkeys ecosystem by partnering with other NFT projects and blockchain platforms.
                 </p>
               </div>
             </div>
             <div class="card-link-wrapper">
               <a
-                class="card-link text-uppercase"
-                id="open-popup5"
-                href="javascript://"
-                >Read More</a
-              >
+                      class="card-link text-uppercase"
+                      
+                      id="open-popup5"
+                      href="javascript://"
+                      >Read More</a
+                    >
             </div>
           </li>
         </ul>
       </div>
     </section>
 
-    <!-- roadmap end -->
-
-    <div class="text-white" id="team" style="height: 50px"></div>
-    <!-- team section start -->
-    <section class="my-5 team">
-      <div class="text-white text-center mb-5 h1 mt-5 description-h1">
-        <img
-          src="./BANANAimage.png"
-          alt=""
-          class="ve fa-bounce"
-          width="30px"
-          height="40px"
-        />
-        Team member
-        <img
-          src="./BANANAimage.png"
-          alt=""
-          class="ve fa-bounce"
-          width="30px"
-          height="40px"
-        />
-      </div>
+    <div class=" text-white" id="team" style="height: 50px; "></div>
+    <!-- team -->
+    
+    <section class="my-5 team" > 
+      <div class="text-white text-center mb-5 h1 mt-5">Team member</div>
       <div class="container team">
-        <div class="row equal">
-          <!-- team member 1 -->
-          <div class="col-lg-3 team-card mx-auto card1-1">
-            <div class="row">
-              <div class="col-6 mt-2">
-                <img
-                  src="./5.jpeg"
-                  alt=""
-                  width="100%"
-                  class="rounded-circle"
-                />
-              </div>
-              <div class="col-6">
-                <h3 class="text-center mt-5">"Jake Monk"</h3>
-                <h5>Co-Founder</h5>
-              </div>
-            </div>
-            <hr />
-            <div>
-              <p class="text-center">
-                Business-savvy entrepreneur with a deep understanding of the NFT
-                space Sets the strategic vision and direction for Venom Monkeys
-                Oversees business development, partnerships, and overall project
-                management
-              </p>
-            </div>
+      <div class="row equal">
+
+        <!-- team member 1 -->
+          <div class="col-lg-3  team-card  mx-auto ">
+            <div class="row"> <div class="col-6 mt-2 "><img src="./5.jpeg" alt="" width="100%" class="rounded-circle"></div> <div class="col-6"><h3 class="text-center mt-5">"Jake Monk"</h3> <h5>Co-Founder</h5></div></div>
+            <hr>
+            <div><p class="text-center">Business-savvy entrepreneur with a deep understanding of the NFT space
+              Sets the strategic vision and direction for Venom Monkeys
+              Oversees business development, partnerships, and overall project management</p></div>
           </div>
+         
 
           <!-- team member 2 -->
-          <div class="col-lg-3 team-card mx-auto card1-2">
-            <div class="row pt-4">
-              <div class="col-6 mt-2">
-                <img
-                  src="./5.jpeg"
-                  alt=""
-                  width="100%"
-                  class="rounded-circle"
-                />
-              </div>
-              <div class="col-6">
-                <h3 class="text-center mt-5">"Carlo Monk"</h3>
-                <h5>Lead Artist</h5>
-              </div>
-            </div>
-            <hr />
-            <div>
-              <p class="text-center pb-5">
-                Talented artist with a keen eye for detail and a passion for
-                primates Responsible for bringing the vision of Venom Monkeys to
-                life through stunning artwork
-              </p>
-            </div>
+          <div class="col-lg-3 team-card mx-auto" >
+            <div class="row pt-4"> <div class="col-6 mt-2 "><img src="./5.jpeg" alt="" width="100%" class="rounded-circle"></div> <div class="col-6"><h3 class="text-center mt-5">"Carlo Monk"</h3> <h5>Lead Artist</h5></div></div>
+            <hr>
+            <div><p class="text-center pb-5">Talented artist with a keen eye for detail and a passion for primates
+              Responsible for bringing the vision of Venom Monkeys to life through stunning artwork</p></div>
           </div>
 
           <!-- team member 3 -->
-          <div class="col-lg-3 team-card mx-auto card1-3">
-            <div class="row pt-4">
-              <div class="col-6 mt-2">
-                <img
-                  src="./5.jpeg"
-                  alt=""
-                  width="100%"
-                  class="rounded-circle"
-                />
-              </div>
-              <div class="col-6">
-                <h3 class="text-center mt-5">"Lee Monk"</h3>
-                <h5>Tech Specialist</h5>
-              </div>
-            </div>
-            <hr />
-            <div>
-              <p class="text-center">
-                Experienced developer with expertise in blockchain and smart
-                contract technologies Manages the technical development and
-                implementation of the Venom Monkeys platform Responsible for
-                smart contract development, website maintenance, and ensuring a
-                smooth user experience
-              </p>
-            </div>
+          <div class="col-lg-3 team-card mx-auto" >
+            <div class="row pt-4"> <div class="col-6 mt-2 "><img src="./5.jpeg" alt="" width="100%" class="rounded-circle"></div> <div class="col-6"><h3 class="text-center mt-5">"Lee Monk"</h3> <h5>Tech Specialist</h5></div></div>
+            <hr>
+            <div><p class="text-center ">Experienced developer with expertise in blockchain and smart contract technologies
+              Manages the technical development and implementation of the Venom Monkeys platform
+              Responsible for smart contract development, website maintenance, and ensuring a smooth user experience</p></div>
           </div>
-        </div>
+          
       </div>
-    </section>
-    <!-- team section end -->
+  </div></section>
+  <div class=" text-white" id="team" style="height: 50px; "></div>
 
-    <!-- faq section start -->
-    <!-- faq -->
-    <!-- <section class="my-5 faq mt-5" id="faq">
-      <div class="text-white text-center mb-5 h1">FAQ</div>
-      <div class="container-faq">
-        <nav class="so">
-          <input id="toggle" type="checkbox" checked />
-          <p class="faq-c mb-0 font2">What is Venom Bears?</p>
-          <ul>
-            <li>
-              <p class="font-monospace">
-                The cuddliest collection on the Venom Blockchain
-              </p>
-            </li>
-          </ul>
-        </nav>
-        <nav class="so">
-          <input id="toggle" type="checkbox" checked />
-          <p class="faq-c mb-0 font2">What is Venom Bears?</p>
-          <ul>
-            <li>
-              <p class="font-monospace">
-                The cuddliest collection on the Venom Blockchain
-              </p>
-            </li>
-          </ul>
-        </nav>
-        <nav class="so">
-          <input id="toggle" type="checkbox" checked />
-          <p class="faq-c mb-0 font2">What is Venom Bears?</p>
-          <ul>
-            <li>
-              <p class="font-monospace">
-                The cuddliest collection on the Venom Blockchain
-              </p>
-            </li>
-          </ul>
-        </nav>
-        <nav class="so">
-          <input id="toggle" type="checkbox" checked />
-          <p class="faq-c mb-0 font2">What is Venom Bears?</p>
-          <ul>
-            <li>
-              <p class="font-monospace">
-                The cuddliest collection on the Venom Blockchain
-              </p>
-            </li>
-          </ul>
-        </nav>
-        <nav class="so">
-          <input id="toggle" type="checkbox" checked />
-          <p class="faq-c mb-0 font2">What is Venom Bears?</p>
-          <ul>
-            <li>
-              <p class="font-monospace">
-                The cuddliest collection on the Venom Blockchain
-              </p>
-            </li>
-          </ul>
-        </nav>
-        <nav class="so">
-          <input id="toggle" type="checkbox" checked />
-          <p class="faq-c mb-0 font2">What is Venom Bears?</p>
-          <ul>
-            <li>
-              <p class="font-monospace">
-                The cuddliest collection on the Venom Blockchain
-              </p>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </section> -->
-    <!-- faq section end -->
+  <!-- faq -->
+  <section class="my-5 faq mt-5" id="faq"> 
+    <div class="text-white text-center mb-5 h1">FAQ</div>
+    <div class="container-faq">
+      <nav class="so">
+        <input id="toggle" type="checkbox" checked />
+        <p class="faq-c mb-0 font2">What is Venom Bears?</p>
+        <ul>
+          <li>
+            <p class="font-monospace">
+              The cuddliest collection on the Venom Blockchain
+            </p>
+          </li>
+        </ul>
+      </nav>
+      <nav class="so">
+        <input id="toggle" type="checkbox" checked />
+        <p class="faq-c mb-0 font2">What is Venom Bears?</p>
+        <ul>
+          <li>
+            <p class="font-monospace">
+              The cuddliest collection on the Venom Blockchain
+            </p>
+          </li>
+        </ul>
+      </nav>
+      <nav class="so">
+        <input id="toggle" type="checkbox" checked />
+        <p class="faq-c mb-0 font2">What is Venom Bears?</p>
+        <ul>
+          <li>
+            <p class="font-monospace">
+              The cuddliest collection on the Venom Blockchain
+            </p>
+          </li>
+        </ul>
+      </nav>
+      <nav class="so">
+        <input id="toggle" type="checkbox" checked />
+        <p class="faq-c mb-0 font2">What is Venom Bears?</p>
+        <ul>
+          <li>
+            <p class="font-monospace">
+              The cuddliest collection on the Venom Blockchain
+            </p>
+          </li>
+        </ul>
+      </nav>
+      <nav class="so">
+        <input id="toggle" type="checkbox" checked />
+        <p class="faq-c mb-0 font2">What is Venom Bears?</p>
+        <ul>
+          <li>
+            <p class="font-monospace">
+              The cuddliest collection on the Venom Blockchain
+            </p>
+          </li>
+        </ul>
+      </nav>
+      <nav class="so">
+        <input id="toggle" type="checkbox" checked />
+        <p class="faq-c mb-0 font2">What is Venom Bears?</p>
+        <ul>
+          <li>
+            <p class="font-monospace">
+              The cuddliest collection on the Venom Blockchain
+            </p>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+ 
+ <!-- <section class="footer text-center"> <hr>VENOM MONKEY 2023 </section> -->
     <div
       class="popup"
-      style="background-color: rgb(37, 38, 38); color: #8ba7c5"
+      style="background-color: rgba(0, 0, 0, 0.587); color: #f5faff"
     >
       <i class="fa-sharp fa-solid fa-circle-xmark close-btn text-danger"></i>
 
       <h2 id="title">title</h2>
       <hr />
       <p id="replace-me">text</p>
-
-      <script src="./js/main.js"></script>
-      <script src="./js/scrollreveal.js"></script>
-      <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-        crossorigin="anonymous"
-      ></script>
-      <script>
-        ScrollReveal().reveal(".navbar-are", {
-          origin: "top",
-          duration: 500,
-          distance: "20px",
-        });
-        ScrollReveal().reveal(".home-left", {
-          origin: "left",
-          duration: 600,
-          distance: "20px",
-          delay: 500,
-        });
-        ScrollReveal().reveal(".home-right", {
-          origin: "right",
-          duration: 500,
-          distance: "10px",
-          delay: 500,
-        });
-        ScrollReveal().reveal(".description-h1", {
-          origin: "right",
-          duration: 500,
-          distance: "0px",
-          delay: 500,
-        });
-        ScrollReveal().reveal(".description-p", {
-          origin: "bottom",
-          duration: 1000,
-          distance: "150px",
-          delay: 800,
-        });
-
-        ScrollReveal().reveal(".card1-1", {
-          origin: "bottom",
-          duration: 500,
-          distance: "50px",
-          delay: 300,
-        });
-        ScrollReveal().reveal(".card1-2", {
-          origin: "bottom",
-          duration: 500,
-          distance: "50px",
-          delay: 500,
-        });
-        ScrollReveal().reveal(".card1-3", {
-          origin: "bottom",
-          duration: 500,
-          distance: "50px",
-          delay: 800,
-          desktop: true,
-          mobile: false,
-        });
-
-        ScrollReveal().reveal(
-          ".card1-4",
-
-          {
-            origin: "bottom",
-            duration: 500,
-            distance: "50px",
-            delay: 1000,
-            desktop: true,
-            mobile: false,
-          }
-        );
-        ScrollReveal().reveal(".roadmap-p", {
-          origin: "bottom",
-          duration: 500,
-          distance: "0px",
-          delay: 1000,
-        });
-      </script>
-    </div>
   </body>
+  <script src="./js/main.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"
+  ></script>
 </html>

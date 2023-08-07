@@ -1,9 +1,16 @@
 body {
   width: 100%;
   background-color: blue;
-  overflow-x: hidden;
+}
+@font-face {
+  font-family: myfont;
+  src: url(../font/gnuolane\ rg.otf);
 }
 
+@font-face {
+  font-family: myfont2;
+  src: url(../font/PROMINDER\ Italic.otf);
+}
 @import url("https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap");
 
 .font1 {
@@ -11,22 +18,35 @@ body {
 }
 .left {
   border-radius: 20px;
+  border-left: 6px solid rgb(7, 62, 49);
+  border-bottom: 6px solid rgb(7, 62, 49);
+  -webkit-box-reflect: below 0px
+    linear-gradient(transparent, rgba(0, 0, 0, 0.1));
 }
 h1 {
-  /* font-family: "Teko", sans-serif; */
+  font-family: myfont;
   font-weight: 200;
   font-size: 500px;
-  background: -webkit-linear-gradient(
+  color: white;
+
+  /* background: -webkit-linear-gradient(
     81deg,
     rgba(72, 105, 170, 1) 0%,
     rgba(39, 197, 155, 1) 0%,
     rgba(38, 79, 192, 1) 84%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  ); */
+  /* -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  text-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4, 0 0 40px #03bcf4,
+    0 0 80px #03bcf4, 0 0 160px #03bcf4;
 }
 .right {
   border-radius: 20px;
+  border-left: 6px solid rgb(22, 27, 100);
+  border-bottom: 6px solid rgb(22, 27, 100);
+  -webkit-box-reflect: below 0px
+    linear-gradient(transparent, rgba(210, 187, 187, 0.09));
+  line-height: 0.07rem;
 }
 .description {
   padding-left: 300px;
@@ -34,11 +54,16 @@ h1 {
   padding-top: 50px;
 }
 .home .h1 {
-  font-size: 40px;
-  font-family: "Fjalla One", sans-serif;
+  font-size: 60px;
+  font-family: myfont;
   font-weight: 600;
 }
 
+.home .a {
+  font-size: 20px;
+  font-family: myfont;
+  font-weight: 500;
+}
 .home p {
   font-size: 20px;
   font-family: "Teko", sans-serif;
@@ -48,14 +73,16 @@ h1 {
 
 .description p {
   font-size: 20px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: myfont;
+  /* font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; */
   font-weight: 200;
-  color: rgba(240, 240, 240, 0.854);
+  color: rgb(255, 255, 255);
 }
 
 .description .h1 {
   font-size: 40px;
-  font-family: "Fjalla One", sans-serif;
+  font-family: myfont2;
+  /* font-family: "Fjalla One", sans-serif; */
   font-weight: 600;
 }
 .description {
@@ -66,7 +93,8 @@ h1 {
 
 .roadmap .h1 {
   font-size: 40px;
-  font-family: "Fjalla One", sans-serif;
+  font-family: myfont2;
+  color: aqua;
   font-weight: 600;
 }
 
@@ -131,7 +159,7 @@ h1 {
 
 .team .h1 {
   font-size: 40px;
-  font-family: "Fjalla One", sans-serif;
+  font-family: myfont2;
   font-weight: 600;
 }
 

@@ -111,7 +111,10 @@
               >
                 Venom Monkeys coming to get you venomized ! 🍌
               </p>
-              <a type="button" class="btn btn-primary rounded-5 font1"
+              <a
+                type="button"
+                class="btn btn-primary rounded-5 a"
+                href="https://discord.gg/tCnS29ty"
                 >Join Our Community
                 <i class="fa-solid fa-arrow-right fa-shake"></i
               ></a>
@@ -133,19 +136,19 @@
           <div>
             <img src="./header-big.caf69b04.png" alt="" class="venomlogo1" />
           </div>
-          <div>
+          <!-- <div>
             <img src="./moon.png" alt="" class="venomlogo2" />
-          </div>
+          </div> -->
           <div class="col-lg-12 m-auto home-right">
             <img
-              src="./2.jpeg"
+              src="./2.png"
               alt=""
               width="50%"
               height="100%"
               class="left mb-5"
             />
             <img
-              src="./5.jpeg"
+              src="./34.png"
               alt=""
               width="45%"
               height="100%"
@@ -287,8 +290,9 @@
           </li>
           <li class="card1 card1-4">
             <div>
-              <h3 class="card-title">phase 4</h3>
+              <h3 class="card-title">PHASE 4</h3>
               <div class="card-content">
+                <h5>Utility Integration</h5>
                 <p>
                   Integrate Venom Monkeys into various platforms and
                   applications, allowing them to be used as avatars, emojis, or
@@ -307,8 +311,9 @@
           </li>
           <li class="card1">
             <div>
-              <h3 class="card-title">Phase 5</h3>
+              <h3 class="card-title">PHASE 5</h3>
               <div class="card-content">
+                <h5>Ecosystem Expansion</h5>
                 <p>
                   Expand the Venom Monkeys ecosystem by partnering with other
                   NFT projects and blockchain platforms.
@@ -357,7 +362,7 @@
             <div class="row">
               <div class="col-6 mt-2">
                 <img
-                  src="./5.jpeg"
+                  src="./co-founder.png"
                   alt=""
                   width="100%"
                   class="rounded-circle"
@@ -384,7 +389,7 @@
             <div class="row pt-4">
               <div class="col-6 mt-2">
                 <img
-                  src="./5.jpeg"
+                  src="./lead-artist.png"
                   alt=""
                   width="100%"
                   class="rounded-circle"
@@ -410,7 +415,7 @@
             <div class="row pt-4">
               <div class="col-6 mt-2">
                 <img
-                  src="./5.jpeg"
+                  src="./Tech Specialist.png"
                   alt=""
                   width="100%"
                   class="rounded-circle"
@@ -513,7 +518,7 @@
     <!-- faq section end -->
     <div
       class="popup"
-      style="background-color: rgb(37, 38, 38); color: #8ba7c5"
+      style="background-color: rgb(37, 38, 38); color: #efefef"
     >
       <i class="fa-sharp fa-solid fa-circle-xmark close-btn text-danger"></i>
 
@@ -543,13 +548,13 @@
         ScrollReveal().reveal(".home-right", {
           origin: "right",
           duration: 500,
-          distance: "150px",
+          distance: "10px",
           delay: 500,
         });
         ScrollReveal().reveal(".description-h1", {
           origin: "right",
           duration: 500,
-          distance: "150px",
+          distance: "0px",
           delay: 500,
         });
         ScrollReveal().reveal(".description-p", {
@@ -576,13 +581,22 @@
           duration: 500,
           distance: "50px",
           delay: 800,
+          desktop: true,
+          mobile: false,
         });
-        ScrollReveal().reveal(".card1-4", {
-          origin: "bottom",
-          duration: 500,
-          distance: "50px",
-          delay: 1000,
-        });
+
+        ScrollReveal().reveal(
+          ".card1-4",
+
+          {
+            origin: "bottom",
+            duration: 500,
+            distance: "50px",
+            delay: 1000,
+            desktop: true,
+            mobile: false,
+          }
+        );
         ScrollReveal().reveal(".roadmap-p", {
           origin: "bottom",
           duration: 500,
